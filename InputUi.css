@@ -1,0 +1,277 @@
+@font-face {
+	font-family:'WebYekan';
+	src:url('../font/WebYekan.woff') format('woff'),url('../font/WebYekan.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family:'WebYekan',tahoma;
+	font-size:13px;
+	padding:0px;
+	margin:0px;
+	min-width:320px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	direction:rtl;
+}
+input ,select ,textarea {
+	font-family:'WebYekan',tahoma;
+	font-size:13px;
+	border:#ccc solid 1px;
+	background:none;
+	color:inherit;
+}
+ul {
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+li {
+	cursor:pointer;
+}
+a {
+	color:inherit;
+	text-decoration:none;
+}
+p {
+	padding:0px;
+	margin:0px;
+}
+.clr {
+	position:relative;
+	clear:both;
+}
+::selection {
+  background:#FC0;
+  color:#222;
+}
+::-moz-selection {
+  background:#FC0;
+  color:#222;
+}
+*:focus {
+    outline: 0;
+}
+.content_scroll {
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.content_scroll.mCustomScrollbar {
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+.input_text {
+	position:relative;
+	box-sizing:border-box;
+	color:#8c8c8c;
+}
+.input_text.input_focus .input_select {
+	display:block;
+}
+.input_text .input_select {
+	display:none;
+	position:absolute;
+	width:100%;
+	max-height:200px;
+	z-index:1000;
+	background:-webkit-linear-gradient(#ffffff,#f3f7fa);
+    background:-o-linear-gradient(#ffffff,#f3f7fa);
+    background:-moz-linear-gradient(#ffffff,#f3f7fa);
+    background:linear-gradient(#ffffff,#f3f7fa);
+	box-sizing:border-box;
+	padding:5px;
+	margin-top:2px;
+	border-radius:4px;
+	border:1px solid #ccc;
+	box-shadow: 0px 3px 5px #ccc;
+}
+.input_select ul {
+	position:relative;
+	width:100%;
+	margin:0px;
+	padding:2px;
+	box-sizing:border-box;
+}
+.input_select ul li {
+	position:relative;
+	display:inline-block;
+	width:100%;
+	box-sizing:border-box;
+	color:#666;
+	border-radius:4px;
+}
+.input_text.large .input_select ul li {
+	height:46px;
+	padding:15px 15px 3px 15px;
+}
+.input_text.small .input_select ul li {
+	height:36px;
+	padding:10px 15px 3px 15px;
+}
+.input_select ul li:hover {
+	background:#fff6a3;
+	
+}
+.input_text .input_select_name.no_select {
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-o-user-select:none;
+	user-select:none; 
+}
+.li_select .icon {
+	position:relative;
+	margin-left:12px;
+	top:1px;
+}
+.input_text.icon_set .input_icon {
+	position:absolute;
+	box-sizing:border-box;
+	text-align:center;
+	background:-webkit-linear-gradient(#ffffff,#f3f7fa);
+    background:-o-linear-gradient(#ffffff,#f3f7fa);
+    background:-moz-linear-gradient(#ffffff,#f3f7fa);
+    background:linear-gradient(#ffffff,#f3f7fa);
+	top:1px;
+	cursor:pointer !important;	
+}
+.input_text.icon_set.large .input_icon {
+	width:50px;
+	height:43px;
+	font-size:24px;
+	padding-top:9px;
+}
+.input_text.icon_set.small .input_icon {
+	width:30px;
+	height:30px;
+	font-size:14px;
+	padding-top:8px;
+}
+.input_text.icon_set.left_icon .input_icon {
+	left:1px;
+	border-radius:4px 0px 0px 4px;
+	border-right:#cdd1d2 solid 1px;
+}
+.input_text.icon_set.right_icon .input_icon  {
+	right:1px;
+	border-radius:0px 4px 4px 0px;
+	border-left:#cdd1d2 solid 1px;
+}
+.input_text.center_text input[type="text"] {
+	text-align:center;
+}
+.input_text input[type="text"] {
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+	cursor:pointer;
+	border:#dbdfe2 solid 1px;
+	border-radius:4px;
+	box-shadow:inset 0px 0px 6px #ecf0f3;
+	font-size:inherit;
+}
+.input_text.bg_color input[type="text"] {
+	background:#fafafa;
+}
+.input_text:hover ,.input_text.input_focus {
+	color:#99891a;
+}
+.input_text:hover input[type="text"] ,.input_text.input_focus input[type="text"] {
+	border:#d4c432 solid 1px;
+	background:#fff;
+	box-shadow:inset 0px 0px 6px #fef8e6;
+}
+.input_text:hover .input_icon ,.input_text.input_focus .input_icon {
+	border-color:#d4c432 !important;
+	color:#b3ac22;
+	background:-webkit-linear-gradient(#ffffff,#fcf0ca);
+    background:-o-linear-gradient(#ffffff,#fcf0ca);
+    background:-moz-linear-gradient(#ffffff,#fcf0ca);
+    background:linear-gradient(#ffffff,#fcf0ca);
+}
+.input_text.large input ,.input_text.small input[type="text"] {
+	padding:7px 10px 5px 10px;
+}
+.input_text.icon_set.large.left_icon input[type="text"] {
+	padding-left:60px;
+}
+.input_text.icon_set.large.right_icon input[type="text"] {
+	padding-right:60px;
+}
+.input_text.icon_set.small.left_icon input[type="text"] {
+	padding-left:40px;
+}
+.input_text.icon_set.small.right_icon input[type="text"] {
+	padding-right:40px;
+}
+.input_text.large {
+	max-width:420px;
+	height:45px;
+	font-size:13px;
+}
+.input_text.small {
+	max-width:200px;
+	height:32px;
+	font-size:11px;
+}
+input.input_ui[type="radio"] , input.input_ui[type="checkbox"] {
+	opacity:0;
+}
+.input_ui_radio ,.input_ui_checkbox {
+	position:absolute;
+	color:#999;
+	cursor:pointer;
+}
+.input_ui_radio:before {
+	font-family:FontIcon;
+	content:'\f111';
+	position:absolute;
+	width:20px;
+	height:20px;
+	top:-3px;
+	right:-20px;
+	font-size:21px;
+	color:#ccc;
+}
+input.input_ui[type="radio"]:checked + .input_ui_radio:before {
+	content:'\f058';
+}
+.input_ui_checkbox:before {
+	font-family:FontIcon;
+	content:'\f0c8';
+	position:absolute;
+	width:20px;
+	height:20px;
+	top:-3px;
+	right:-20px;
+	font-size:21px;
+	color:#ccc;
+}
+input.input_ui[type="checkbox"]:checked + .input_ui_checkbox:before {
+	content:'\f14a';
+}
+input.input_ui[type="checkbox"]:hover + .input_ui_checkbox ,input.input_ui[type="checkbox"]:checked + .input_ui_checkbox ,input.input_ui[type="radio"]:hover + .input_ui_radio ,input.input_ui[type="radio"]:checked + .input_ui_radio {
+	color:#b3a41c;
+}
+input.input_ui[type="checkbox"]:hover + .input_ui_checkbox .icon ,input.input_ui[type="checkbox"]:checked + .input_ui_checkbox .icon ,input.input_ui[type="radio"]:hover + .input_ui_radio .icon ,input.input_ui[type="radio"]:checked + .input_ui_radio .icon {
+	color:#b3a41c;
+	text-shadow:0px 0px 4px #fef8e6;
+}
+input.input_ui[type="checkbox"]:hover + .input_ui_checkbox:before ,input.input_ui[type="checkbox"]:checked + .input_ui_checkbox:before ,input.input_ui[type="radio"]:hover + .input_ui_radio:before ,input.input_ui[type="radio"]:checked + .input_ui_radio:before {
+	color:#d4c432;
+	text-shadow:0px 0px 2px #fef8e6;
+}
+.input_ui_radio .icon ,.input_ui_checkbox .icon {
+	position:relative;
+	display:inline-block;
+	width:20px;
+	font-size:14px;
+	color:#777;
+	padding-top:2px;
+	padding-right:5px;
+	cursor:pointer;
+}
+.input_label {
+	padding-right:5px;
+}
