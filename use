@@ -1,0 +1,46 @@
+----------------------------------------------------------------------
+1 - Add Jquery And Scrool.min.js And InputUi.js
+2 - Add Font-Awesome From https://github.com/FortAwesome/Font-Awesome/tree/master/fonts
+3 - Add Scroll.min.css And InputUi.css
+4 - Add To document ready event
+    {
+      $.InputUI();
+		  $('.content_scroll').mCustomScrollbar();
+    }
+----------------------------------------------------------------------
+:: Input Tag
+
+  <input class="input_ui" type="text" value="" placeholder="تست متن" option="size:large;background:true;icon:bars"/>
+  
+  <input class="input_ui" type="text" value="" placeholder="تست متن" option="icon:hotel;icon_aling:right" name="fname"/>
+  
+----------------------------------------------------------------------
+:: Select Tag
+
+  <select class="input_ui" name="test_7" option="size:large;background:true;icon:caret-down">
+  	<option value="1">اول</option>
+    <option value="2" selected>دوم</option>
+    <option value="3">سوم</option>
+  </select>
+  
+  <select class="input_ui" name="test_7" option="icon:caret-down;icon_aling:right;search_input:true">
+  	<option value="11">اول</option>
+    <option value="22">دوم</option>
+    <option value="33">سوم</option>
+  </select>
+  
+----------------------------------------------------------------------
+:: Radio Tag
+
+  <input class="input_ui" type="radio" value="" option="icon:hotel;label:تست یک" name="ok" />
+  
+  <input class="input_ui" type="radio" value="" option="label:تست دو" name="ok" checked/>
+  
+----------------------------------------------------------------------
+:: Cehckbox Tag
+
+  <input class="input_ui" type="checkbox" value="" option="icon:facebook;label:تست" name="oki" />
+  
+  <input class="input_ui" type="checkbox" value="" option="icon:search;label:متن" name="oki" />
+
+----------------------------------------------------------------------
