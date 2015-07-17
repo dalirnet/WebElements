@@ -1,2 +1,2 @@
 # WebElements
-Graphic Input For Web
+Graphical Inputs For Web
